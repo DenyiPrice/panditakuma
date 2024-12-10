@@ -1,0 +1,108 @@
+:root{
+    --color-dark:#18203a;
+    --color-primary: #fff;
+    --color-disable: #aaa;
+    --color-alternative: #35ecf4;
+    --color-secondary: #667380;
+    --color-blue: #0B4CA1;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(135deg,#802f6e,#ca5823,#5A4894, #A950A1,#FF7CAE );
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.profile__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    flex-flow: column;
+    padding:0;
+    position:relative;
+}
+
+.profile__container.active{
+    max-height: 953px;
+}
+
+.profile__image {
+    width: 10%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.profile__container.profile__container--links{
+    flex-flow: row wrap;
+}
+
+.profile__links.icon{
+    margin: 0 24px;
+    font-size: 28px;
+    color: var(--color-alternative);
+    text-decoration: none;
+    background: none;
+}
+
+.profile__links{
+    background:var(--color-secondary);
+    padding:20px;
+    display: inline-block;
+    border-radius: 30px;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.profile__links.disabled{
+    background:var(--color-disable);
+    cursor: not-allowed;
+}
+
+.title{
+    font-size: 2rem;
+    color:rgb(219, 219, 219)
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:rgb(194, 190, 190)
+}
+.subtitleb{
+    font-size: 1rem;
+    font-weight: 350;
+    color:rgb(194, 190, 190)
+}
+
+.hightext{
+    font-size: 1.5rem;
+    color: rgb(255, 0, 200);
+}
+
+.btn{
+    background:var(--color-primary);
+    color: var(--color-blue);
+    padding:20px 30px;
+    text-align: center;
+    display: inline-block;
+    border:0 none;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+        0%{
+            background-position: 0% 50%;
+}
+}
